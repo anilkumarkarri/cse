@@ -1,0 +1,72 @@
+<html>
+    <body>
+        <table border="1" align="center" width="300" height="250" bgcolor="yellow">
+        <caption style="color:green">SIMPLE CALCULATOR</caption>
+            <tr><td>
+        <script>
+        function fun()
+        {
+         var a = document.getElementById("text1");
+         var b = document.getElementById("text2");
+            var aVal=parseInt(a.value);
+            var bVal=parseInt(b.value); 
+            var op=document.getElementById("demo3");
+            switch(op.value)
+           {
+              case '+' :
+                       document.getElementById("demo4").value=aVal+bVal;
+                       break;
+              case '-':
+                       document.getElementById("demo4").value=aVal-bVal;
+                       break;
+              case '*':
+                       document.getElementById("demo4").value=aVal*bVal;
+                       break;
+              case '/':
+                       document.getElementById("demo4").value=aVal/bVal;
+                       break;
+               case '++':
+                       
+                       document.getElementById("demo4").value=aVal+bVal;
+                       break;
+               case '--':
+                       document.getElementById("demo4").value=aVal+bVal;
+                       break;
+               
+           }
+        }
+    
+
+        </script>
+
+
+    <div>
+        a :
+        <input type="text" id="text1">
+        <br><br>
+        b:
+        <input type="text" id="text2">
+        <br><br>
+        operator :
+        <select id="demo3">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="++">++</option>
+            <option value="--">--</option>
+        </select><br><br>
+        Result : <br>
+        <input type="text" id="demo4">
+        <br>
+        <input type="button" value="Display Result" onclick="fun()">
+    </div>
+
+
+
+<br><br>
+</tr></td>
+</table>
+    
+    </body>
+</html>

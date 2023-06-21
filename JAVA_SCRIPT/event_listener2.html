@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <button id ="demo">try it</button>
+        <p id ="par"></p>
+        <script>
+            //here we are addnig multiple events  to the html element 
+            document.getElementById("demo").addEventListener("click",fun1);
+            document.getElementById("demo").addEventListener("mouseover",fun2);
+            document.getElementById("demo").addEventListener("mouseout",fun3);
+            function fun1()
+            {
+                document.getElementById("par").innerHTML+="clicked!"+"<br>";
+            }
+            function fun2()
+            {
+                document.getElementById("par").innerHTML+="mouse overed!"+"<br>";
+            }
+            function fun3()
+            {
+                document.getElementById("par").innerHTML+="mouse outed!"+"<br>";
+            }
+
+        </script>
+    </body>
+</html>

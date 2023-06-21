@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <script>
+
+        function sameinfo()
+        {
+           for(i=0;i<document.f1.option.length;i++)
+           {
+              document.f2.option[i].value=document.f1.option[i].value;
+           }
+        }
+        </script>
+<form name="f1">
+f_name:<input type="text" name="option">    
+l_name:<input type="text" name="option">
+email:<input type="text" name="option">
+address:<input type="text" name="option">
+</form>
+<button onclick="sameinfo()">try it</button>
+<form name="f2">
+    f_name:<input type="text" name="option">    
+    l_name:<input type="text" name="option">
+    email:<input type="text" name="option">
+    address:<input type="text" name="option">
+    </form>
+</body>
+</html>

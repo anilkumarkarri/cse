@@ -1,0 +1,80 @@
+<html>
+    <head></head>
+    <body>
+        <table border="1" align="center" width="300" height="250">
+            <p id="para">rrrrr</p>
+            <p id="para1">rrrrr</p>
+        <caption>SIMPLE CALCULATOR</caption>
+            <tr><td>
+        
+a : <input id="demo1" type="text"><br><br>
+b : <input id="demo2"type="text"> <br><br>
+
+operator:
+<select id="demo3">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="++">++</option>
+    <option value="--">--</option>
+</select><br><br>
+result:<p id="demo4" style="border:1px solid black;height:12px;width:60px"></p>
+<br><br>
+</tr></td>
+</table>
+      <button id="btn">Result</button> 
+
+
+
+
+
+
+
+      <script>
+        var btnel=document.getElementById("btn")
+        var a= document.getElementById("demo1");
+         
+        var b= document.getElementById("demo2");
+         
+        var p=document.getElementById("para");
+        var p1=document.getElementById("para1");
+           var op=document.getElementById("demo3");
+           p.textContent="Hai......";
+           btnel.onclick= function(){
+            var aVal=parseInt(a.value);
+            var bVal=parseInt(b.value); 
+           p.textContent=parseInt(aVal)+parseInt(bVal);
+           switch(op.value)
+           {
+              case '+' :
+                     p1.textContent="in +"+(aVal+bVal);
+                       document.getElementById("demo4").textContent=aVal+bVal;
+                       break;
+              case '-':
+                       document.getElementById("demo4").textContent=aVal-bVal;
+                       break;
+              case '*':
+                       document.getElementById("demo4").textContent=aVal*bVal;
+                       break;
+              case '/':
+                       document.getElementById("demo4").textContent=aVal/bVal;
+                       break;
+               case '++':
+                       
+                       document.getElementById("demo4").textContent=aVal+bVal;
+                       break;
+               case '--':
+                       document.getElementById("demo4").textContent=aVal+bVal;
+                       break;
+               
+           }
+  
+           
+       }
+       </script>
+
+    </body>
+
+</html>

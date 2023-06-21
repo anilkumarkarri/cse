@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+       *{
+         margin:2px;
+         padding:2px;
+       }
+       ul
+       {
+         list-style-type:none;
+        /* heigth and width properties are not required */
+         background-color:aqua;
+         position:fixed;/*the text on the page will sroll but not the text/content*/
+         overflow:hidden;/*if the contens of the lists are overflow then they will be hiddened */
+        
+        }
+        li a
+        {
+           text-decoration :none;/*for removing the underline*/
+           display:block;/*for displaying the content of the link*/
+           color:black;
+           text-align:center;
+        }
+        li a:hover /*of we place mouse over the link*/
+        {
+            background-color:green;
+            color:white;
+        }
+        li
+        {
+          float : left;/* for aligning the contents of the links side by side */ 
+        }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">TUTORIALS</a></li>
+            <li><a href="#">MATERIALS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+
+    </body>
+</html>

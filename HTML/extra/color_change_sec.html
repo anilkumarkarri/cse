@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript">
+         setInterval(change_color,1000);// 1000 milli seconds 
+         function change_color()
+         {
+            var x= document.getElementById("demo");
+            if(x.style.color=="black")
+               x.style.color="red";
+            else if(x.style.color=="red")
+               x.style.color="blue";
+            else if(x.style.color=="blue")
+               x.style.color="green";
+            else if(x.style.color=="green")
+            x.style.color="black";
+            else // takes defaultly as black color 
+              x.style.color="black";// just place defaultly if conditions are true then this will be executed
+         } 
+        </script>
+    </head>
+    <body>
+       <h3 id ="demo">CHANGE COLOR FOR EVERY 1 SECOND </h3> 
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!-- drop down menu : a menu inside the box
+ transparent menu : menu looking like transparent using opacity property  -->
+<html>
+<head>
+<style>
+*{
+   margin:0;
+   padding:3px; 
+}
+ul li 
+{
+   float:left; 
+   background-color:aqua;
+}
+ul
+{
+    list-style-type: none;
+    position:fixed;/*the text on the page will sroll but not the text/content*/
+    overflow:hidden;
+}
+li a 
+{
+    text-decoration: none;
+    color:black;
+    display:block;
+}
+li a:hover
+{
+   background-color:green;
+   color:white;
+}
+ul li ul li 
+{
+   display:none;
+   float :none;
+}
+ul li:hover ul li 
+{
+    display:block;
+}
+li ul 
+{
+    opacity:0.5;/* for the transparent menu*/
+}
+</style>
+</head>    
+<body>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">TUTORIALS</a>
+<ul> <!--for the drop down menu-->
+    <li><a href="#">c</a></li>
+    <li><a href="#">python</a></li>
+    <li><a href="#">c++</a></li>
+    <li><a href="#">java</a></li>
+    <li><a href="#">mysql</a></li>
+</ul>
+</li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">CONTACT US</a></li>
+</ul>
+</body>
+</html>

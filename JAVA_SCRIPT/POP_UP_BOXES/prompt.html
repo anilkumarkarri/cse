@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1 align="center">PROMPT BOX</h1>
+        <p id="demo"></p>
+        <button onclick="my_fun()">try it</button>
+        <script>
+        function my_fun()
+        {
+            let txt;
+            var person=prompt("enter your name plz...:");
+            if(person==null || person=="")
+            {
+                txt="used cancelled the prompt box!";
+                document.getElementById("demo").innerHTML=txt;
+            }
+            else
+            {
+                document.getElementById("demo").innerHTML="hello "+person+" how are you today!";
+            }
+            
+        }
+        </script>
+    </body>
+</html>

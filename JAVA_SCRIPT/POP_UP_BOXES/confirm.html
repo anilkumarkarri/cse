@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <button onclick="my_fun()">try it</button>
+        <p id="demo"></p>
+        <script>
+        function my_fun()
+        {
+            var txt;
+            if(confirm("press the button!"))
+            {
+                txt="you pressed ok";
+            }
+            else
+            {
+                txt="you cancelled!";
+            }
+            document.getElementById("demo").innerHTML=txt;
+        }
+        </script>
+    </body>
+</html>
